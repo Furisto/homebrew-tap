@@ -5,21 +5,21 @@
 class Construct < Formula
   desc "Your AI-powered development assistant"
   homepage "https://github.com/furisto/construct"
-  version "0.0.1"
+  version "0.0.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.1/construct_0.0.1_darwin_amd64.tar.gz"
-      sha256 "827ba2f3b6d1a252a1ef140605e66918b31c4d78463478b15c673052af2cde87"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.3/construct_0.0.3_darwin_amd64.tar.gz"
+      sha256 "5bda26a92f2aafee9ebdb1d69f0277d815c76078aa29951071502d1705df4cc2"
 
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.1/construct_0.0.1_darwin_arm64.tar.gz"
-      sha256 "40e8dcfea052acae7c7cdc9010cf1aff280d1928a8597fc8adeb3935b72c66b5"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.3/construct_0.0.3_darwin_arm64.tar.gz"
+      sha256 "c6d00767f6ed01fdc83d4497eb81a8d1bda3b576f757aff189ef22634f341ab7"
 
       def install
         bin.install "construct"
@@ -29,15 +29,15 @@ class Construct < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.1/construct_0.0.1_linux_amd64.tar.gz"
-      sha256 "686620fcc0fe7448e347c1789ed6a73bdf53a7da28afb8d9665a83ef9e3dfe28"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.3/construct_0.0.3_linux_amd64.tar.gz"
+      sha256 "0afcb8baa41429dadd666544f9ffe39236096cdef367c324bd4b50977708e650"
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.1/construct_0.0.1_linux_arm64.tar.gz"
-      sha256 "41216321cce2923580f5ab804b14d383611acb4657da8e8f3625927e2b1d0630"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.3/construct_0.0.3_linux_arm64.tar.gz"
+      sha256 "2209d65a11b4a44228310fff5e8611c7b604772301d9cac44557a54e9ff2700a"
       def install
         bin.install "construct"
       end
