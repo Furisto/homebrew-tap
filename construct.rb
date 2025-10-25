@@ -5,21 +5,21 @@
 class Construct < Formula
   desc "Your AI-powered development assistant"
   homepage "https://github.com/furisto/construct"
-  version "0.0.6"
+  version "0.0.7"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.6/darwin_amd64.tar.gz"
-      sha256 "067dc97f8fb05633980ca8325194253a078aaaae1e8609632997d72ef95228e0"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.7/darwin_amd64.tar.gz"
+      sha256 "dd4c3b5e20aa560469c80f9b8a55eeddc8d12c92cd03e08f094c9a0658be10c7"
 
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.6/darwin_arm64.tar.gz"
-      sha256 "b19e5c4ededb8f9dcc14d18bcf96205eed0ce567799d647d313e2c27df6dd061"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.7/darwin_arm64.tar.gz"
+      sha256 "e54fa190cadeee1b18ee1c2ec83d660fd8c4c1d8cba2fd97ee76b019dde6b5e6"
 
       def install
         bin.install "construct"
@@ -29,15 +29,15 @@ class Construct < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.6/linux_amd64.tar.gz"
-      sha256 "ad3d9206efd3924ae18b542ab2153497ae1ee6ff5372224c0849cacd0d44a8d5"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.7/linux_amd64.tar.gz"
+      sha256 "7541ca49b9151d1e9bc871d3301e1533e5b546fa42497a1f8f29e4cbfdd09678"
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.6/linux_arm64.tar.gz"
-      sha256 "2ea5ae078b571b932f6d46dc91384ad6101a82a1bbaebd8ac82a859ba085f610"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.7/linux_arm64.tar.gz"
+      sha256 "30889ab53ba71edca2509d9510a28c99a602071f0c268a2beb4f1282fbe60604"
       def install
         bin.install "construct"
       end
