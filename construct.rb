@@ -5,21 +5,21 @@
 class Construct < Formula
   desc "Your AI-powered development assistant"
   homepage "https://github.com/furisto/construct"
-  version "0.0.7"
+  version "0.0.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.7/darwin_amd64.tar.gz"
-      sha256 "dd4c3b5e20aa560469c80f9b8a55eeddc8d12c92cd03e08f094c9a0658be10c7"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.8/darwin_amd64.tar.gz"
+      sha256 "1a1210afe8e98ea52258e99bf0d072684a6092e940a3a927d3f72aab5c92587a"
 
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.7/darwin_arm64.tar.gz"
-      sha256 "e54fa190cadeee1b18ee1c2ec83d660fd8c4c1d8cba2fd97ee76b019dde6b5e6"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.8/darwin_arm64.tar.gz"
+      sha256 "73c4949aca493e757200d4e297db178b033b1954efd43df35485dd971e988ef2"
 
       def install
         bin.install "construct"
@@ -29,15 +29,15 @@ class Construct < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.7/linux_amd64.tar.gz"
-      sha256 "7541ca49b9151d1e9bc871d3301e1533e5b546fa42497a1f8f29e4cbfdd09678"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.8/linux_amd64.tar.gz"
+      sha256 "355b6d7018898654753cdf0e374c9b773f7be4f3745f68c093a32d5837f30076"
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.7/linux_arm64.tar.gz"
-      sha256 "30889ab53ba71edca2509d9510a28c99a602071f0c268a2beb4f1282fbe60604"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.8/linux_arm64.tar.gz"
+      sha256 "ff2b00d5724baf3fc344afd065d6fdc50e5ae8ba22f833803f0fbc73d276a207"
       def install
         bin.install "construct"
       end
