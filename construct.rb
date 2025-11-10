@@ -5,21 +5,21 @@
 class Construct < Formula
   desc "Your AI-powered development assistant"
   homepage "https://github.com/furisto/construct"
-  version "0.0.9"
+  version "0.0.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.9/darwin_amd64.tar.gz"
-      sha256 "61e4be0ce7184f4e7991a547d28a1583a73a3c88f440a256a9e4f9a9c4c21d9e"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.10/darwin_amd64.tar.gz"
+      sha256 "42824bfbff2b7d70fd36e8062586d683c04a1a12964de79fceb1fdd3ef598b57"
 
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.9/darwin_arm64.tar.gz"
-      sha256 "276a80f2663bf0b6810160dd88f45a4cec4e1a9f7390d0aac766697308f5808b"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.10/darwin_arm64.tar.gz"
+      sha256 "f169ea3398fccdd9dfe09783826005223af19b4743ff7a22d45d22f682e4823a"
 
       def install
         bin.install "construct"
@@ -29,15 +29,15 @@ class Construct < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.9/linux_amd64.tar.gz"
-      sha256 "13ea4dd270ffe56d019d94a8fcd4cc1f6c836ee6ea09c924a3bd6ac0a1102bbb"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.10/linux_amd64.tar.gz"
+      sha256 "0c4f5683ffe7eaffcf7bcfda3c84187ccd6e20108b8a6713113e91c72053be9d"
       def install
         bin.install "construct"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Furisto/construct/releases/download/v0.0.9/linux_arm64.tar.gz"
-      sha256 "38fb0e20a119d8e8cb9d83b686b2d72a992bcf6c6a26aa9ec41273f198d4b4e1"
+      url "https://github.com/Furisto/construct/releases/download/v0.0.10/linux_arm64.tar.gz"
+      sha256 "3c7d4fda61a849e140250347db60814a20c90d534b60f32117487c773cce354e"
       def install
         bin.install "construct"
       end
